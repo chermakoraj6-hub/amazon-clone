@@ -47,18 +47,24 @@ margin-left: 15px;
     display: flex;
     justify-content: space-evenly;
     background-color:darkgoldenrod;
-    width: 620px;
+    width: 564.91px;
     height: 40px;
     border-radius: 5px;
 }
 .search-select{
     background-color: #f3f3f3;
-    width: 50px;
+    width: 38px;
     text-align: center;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     border: none;
 
+}
+.option-search{
+    width: 40%;
+    background-color: #e6e6e6;
+    text-align: left;
+    font-size: 0.9rem;
 }
 .search-input{
     width: 100%;
@@ -80,6 +86,99 @@ margin-left: 15px;
 .nav-search:hover{
     border: 2px solid orange;
 }
+
+.nav-signin{
+    position:relative;
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.signincontainer{
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 450px;
+    background-color: white;
+    color:#0F1111;
+    border: 1px solid #111;
+
+    width: 450px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 999;
+    border-radius: 8px;
+
+
+}
+.signin {
+    display: block;
+    text-align: center;
+    background-color: #ffd814; /* Eye-catching yellow base */
+    color: #111;
+    font-size: 15px;          /* Bigger font size */
+    font-weight: 600;         /* Bold text */
+    padding: 10px 0;          /* Tall padding makes the box bigger */
+    width: 65%;               /* Spans most of the dropdown width */
+    margin: 5px auto 12px auto; /* Centers the box and adds bottom margin */
+    border: 1px solid #fcd200;
+    border-radius: 6px;       /* Pill/Button style rounded edges */
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.signin:hover {
+    background-color: #f7ca00; /* Darker yellow on hover */
+}
+
+.newcustomer {
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+.newcustomer p {
+    display: inline;
+    color: #007185;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.newcustomer p:hover {
+    color: #c45500;
+    text-decoration: underline;
+}
+/* 3. Two-Column Layout for Lists & Accounts */
+.custom-search {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+/* Fixing the list styling */
+.custom-search div {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.custom-search a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-size: 13px;
+    padding: 4px 0;
+}
+
+.custom-search a:hover {
+    color: #ff9900; /* Amazon orange hover link style */
+}
+
+/* 4. Trigger Dropdown on Hover */
+.nav-signin:hover .signincontainer {
+    display: block;
+}
+
+
 /** box4**/
 span {
     font-size: 0.7rem;
